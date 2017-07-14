@@ -51,12 +51,13 @@ svg.append('g')
 
 var submissionsLine = d3.line()
 	.x(function(d) {
+		console.log(d)
 		return xScale(new Date(d.date));
 	})
 	.y(function(d) {
 		return yScale(d.submissions);
 	})
-	// .curve(d3.curveCatmullRom.alpha(0.5));
+	.curve(d3.curveCatmullRom.alpha(0.5));
 
 var path = svg.append('g').append('path')
 	.attr('d', submissionsLine(data))
@@ -66,13 +67,17 @@ var path = svg.append('g').append('path')
 
 var totalLength = path.node().getTotalLength();
 
-path
-	.attr("stroke-dasharray", totalLength + " " + totalLength)
-	.attr("stroke-dashoffset", totalLength)
-	.transition()
-	.duration(2000)
-    .ease(d3.easeCubicInOut)
-	.attr("stroke-dashoffset", 0);
+// path
+// 	.attr("stroke-dasharray", totalLength + " " + totalLength)
+// 	.attr("stroke-dashoffset", totalLength)
+// 	.transition()
+// 	.duration(2000)
+//     .ease(d3.easeCubicInOut)
+// 	.attr("stroke-dashoffset", 0);
+
+
+
+    path.attr("stroke-dasharray",500 + " " + totalLength);
 
 // svg.append('g')
 // 	.selectAll('circle')

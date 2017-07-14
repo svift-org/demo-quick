@@ -18,9 +18,11 @@ var data = [
 	{ date: '2017-01-16', submissions: 700 },
 	{ date: '2017-02-17', submissions: 500 }
 ];
+var width = 500,
+  	height = 500,
+  	padding = 50;
 
-
-var svg = d3.select('#chart').append('svg').attr('height', '500px').attr('width', '500px');
+var svg = d3.select('#chart').append('svg').attr('height', height).attr('width', width);
 
 var xExtent = d3.extent(data, function(d, i) { return d.date; });
 var yExtent = d3.extent(data, function(d, i) { return d.submissions; });
@@ -32,7 +34,6 @@ var xScale = d3.scaleTime()
 var yScale = d3.scaleLinear()
 	.domain(yExtent)
 	.range([460,240]);
-
 
 var xAxis = d3.axisBottom(xScale);
 var yAxis = d3.axisLeft(yScale);
@@ -47,11 +48,8 @@ svg.append('g')
 	.attr('transform', 'translate(40,0)')
 	.call(yAxis);
 
-
-
 var submissionsLine = d3.line()
 	.x(function(d) {
-		console.log(d)
 		return xScale(new Date(d.date));
 	})
 	.y(function(d) {
@@ -65,52 +63,51 @@ var path = svg.append('g').append('path')
 	.attr('stroke', '#38CCCC')
 	.attr('stroke-width', 3);
 
+//round curves
 var totalLength = path.node().getTotalLength();
 
-// path
-// 	.attr("stroke-dasharray", totalLength + " " + totalLength)
-// 	.attr("stroke-dashoffset", totalLength)
-// 	.transition()
-// 	.duration(2000)
-//     .ease(d3.easeCubicInOut)
-// 	.attr("stroke-dashoffset", 0);
 
 
 
-    path.attr("stroke-dasharray",500 + " " + totalLength);
 
-// svg.append('g')
-// 	.selectAll('circle')
-// 	.data(data)
-// 	.enter()
-// 	.append('circle')
-// 	.attr('fill', '#24E0FB')
-// 	.attr('r', 0)
-// 	.attr('cx', function(d, i) {
-// 		return xScale(new Date(d.date));
-// 	})
-// 	.attr('cy', function(d, i) {
-// 		return yScale(d.submissions);
-// 	})
-// 	.on('mouseover', function(d, i) {
-// 		d3.select(this)
-// 			.transition()
-// 			.duration(300)
-// 			.attr('r', 50);
-// 	})
-// 	.on('mouseleave', function(d, i) {
-// 		d3.select(this)
-// 			.transition()
-// 			.duration(300)
-// 			.attr('r', 3);
-// 	})
-// 	.transition()
-// 	.duration(500)
-// 	.delay(1800)
-// 	.attr('r', 5)
-// 	.transition()
-// 	.duration(500)
-// 	.attr('r', 3);
+//Choose Easing
+var ease = d3.easeCubicInOut,
+//Counter
+  cFrame = 0,
+//Desired number of frames
+  numFrames = 100,
+//Example specific
+  state = true,
+//Requires one interpolater for each variable that needs to be changed (similar to scales)
+  interpolate = d3.interpolate(0, totalLength);
+
+function update(){
+  cFrame++;
+  if(cFrame > numFrames){
+    cFrame = 0;
+    if(state){
+      interpolate = d3.interpolate(0, 0);
+    }else{
+      interpolate = d3.interpolate(0, totalLength);
+    }
+    state = !state;
+  }
+
+  //Animation part
+
+  path.attr("stroke-dasharray", function(){
+    return interpolate(ease(1/numFrames*cFrame)) + " " + totalLength;
+  });
+
+
+  setTimeout(function(){
+    window.requestAnimationFrame(update);
+  }, 10);
+}
+
+window.requestAnimationFrame(update);
+
+
 
 
 

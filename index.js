@@ -19,7 +19,7 @@ var data = [
 	{ date: '2017-02-17', submissions: 500 }
 ];
 var width = 500,
-  	height = 500,
+  	height = 300,
   	padding = 50;
 
 var svg = d3.select('#chart').append('svg').attr('height', height).attr('width', width);
@@ -40,12 +40,12 @@ var yAxis = d3.axisLeft(yScale);
 
 svg.append('g')
 	.attr('id', 'xAxisG')
-	.attr('transform', 'translate(0,460)')
+	.attr('transform', 'translate(0,260)')
 	.call(xAxis);
 
 svg.append('g')
 	.attr('id', 'yAxisG')
-	.attr('transform', 'translate(40,0)')
+	.attr('transform', 'translate(40,-200)')
 	.call(yAxis);
 
 var submissionsLine = d3.line()
@@ -61,6 +61,7 @@ var path = svg.append('g').append('path')
 	.attr('d', submissionsLine(data))
 	.attr('fill', 'none')
 	.attr('stroke', '#38CCCC')
+  .attr('transform', 'translate(0,-200)')
 	.attr('stroke-width', 3);
 
 //round curves

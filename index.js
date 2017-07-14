@@ -20,7 +20,7 @@ var data = [
 ];
 
 
-var svg = d3.select('#linechart').append('svg').attr('height', '500px').attr('width', '500px');
+var svg = d3.select('#chart').append('svg').attr('height', '500px').attr('width', '500px');
 
 var xExtent = d3.extent(data, function(d, i) { return d.date; });
 var yExtent = d3.extent(data, function(d, i) { return d.submissions; });

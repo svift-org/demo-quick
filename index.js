@@ -66,13 +66,13 @@ var path = svg.append('g').append('path')
 
 var totalLength = path.node().getTotalLength();
 
-// path
-// 	.attr("stroke-dasharray", totalLength + " " + totalLength)
-// 	.attr("stroke-dashoffset", totalLength)
-// 	.transition()
-// 	.duration(2000)
-//     .ease(d3.easeCubicInOut)
-// 	.attr("stroke-dashoffset", 0);
+path
+	.attr("stroke-dasharray", totalLength + " " + totalLength)
+	.attr("stroke-dashoffset", totalLength)
+	.transition()
+	.duration(2000)
+    .ease(d3.easeCubicInOut)
+	.attr("stroke-dashoffset", 0);
 
 // svg.append('g')
 // 	.selectAll('circle')

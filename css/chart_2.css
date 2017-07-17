@@ -1,0 +1,31 @@
+#chart_2 {
+    height: 200px;
+    text-align: center;
+    position: relative;
+    margin: 4% auto;
+  }
+
+
+.el{
+  position: absolute;
+  top: 30%;
+  left: calc(50% - 350px);
+  /*background-color: #A1A1A1;*/
+  height: 50px;
+  width: 50px;
+  border-radius: 400px;
+}
+
+.legend{
+  position: absolute;
+  top: 83%;
+  left: calc(50% - 330px);
+  height: 10px;
+  color: white;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.5;
+}
+
+.number{
+  color: #FFBE00;
+}

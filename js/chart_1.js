@@ -32,7 +32,7 @@ var littleTree = anime({
 
 // // Little Tree Annotation
 var littleTreeAnnotationLine  = anime({
-  targets: '.legend',
+  targets: '.legend_1',
   width: '100px',
   easing: 'easeInOutQuad',
   delay: 1500,
@@ -42,7 +42,7 @@ var littleTreeAnnotationLine  = anime({
 });
 
 var littleTreeAnnotationText  = anime({
-  targets: '#legend-text',
+  targets: '#legend_1-text',
   left: "360px",
   color: "#FFBE00",
   easing: 'easeInOutQuad',

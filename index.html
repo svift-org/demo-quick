@@ -22,6 +22,27 @@
     margin: 4% auto;
   }
 
+  #controls{
+    color: #A1A1A1;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    text-transform: uppercase;
+  }
+
+  #play, #pause{
+    position: absolute;
+    font-size: 0.9em;
+  }
+
+  #play{
+    top: 5%;
+    left: calc(50% + 130px);
+  }
+
+  #pause{
+    top: 20%;
+    left:  calc(50% + 130px);
+  }
+
   #back{
     position: absolute;
     top: 0;
@@ -55,6 +76,10 @@
 	<div id ="chart">
     <div id="back"></div>
     <div id="accent"></div>
+    <div id ="controls">
+      <div id ="play">Play</div>
+      <div id ="pause">Pause</div>
+    </div>
   </div>
 	<div id ="bottom"><img src="img/bottom_rp.png"></div>
 <!-- <script src="index.js"></script> -->

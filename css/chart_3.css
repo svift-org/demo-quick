@@ -1,26 +1,23 @@
-  #bars_wrapper{
-    height: 200px;
+  #chart_3{
+    text-align: center;
   }
 
-  #bars_wrapper .bar{
-    width: 35px;
+  #wrapper{
+    /*height: 200px;*/
+  }
+
+  #wrapper div {
+      height: 15px;
+      /*margin: 4px;*/
+      width: 225px;
+  }
+
+  .red{
+    background-color: #EB124F;
+  }
+  .blue{
+    background-color: #165C7C;
+  }
+  .yellow{
     background-color: #FFBE00;
-    margin: -1px;
-    display: inline-block;
-    /*background: linear-gradient(to top, #F8B600 , #FFBE00);*/
-  }
-
-  .helper{
-    width: 0px;
-    background-color: white;
-    display: inline-block;
-  }
-
-  #text_wrapper span{
-    padding-top: 5px;
-    display: inline-block;
-    width: 35px;
-    text-align:  center;
-    font-family: "Lato","Helvetica","Arial",sans-serif;
-    color: #a1a1a1;
   }

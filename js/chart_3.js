@@ -1,32 +1,30 @@
-    var barAnimation = anime({
-      targets: '#bars_wrapper .bar',
-      delay: function(el, i) { 
-        return i * 400; //delay to start next bars_wrapper animation
-      },
-      opacity: 0,
-      backgroundColor: "#fff",
-      height: {
-        value:0,
-        // direction: 'reverse'
-      },
-      duration: 5200, //total animation time
+   var barAnimation = anime({
+      targets: '#wrapper div',
+      // delay: function(el, i) { 
+      //   return i * 100; //delay to start next bars_wrapper animation
+      // },
+      duration: 1000, //total animation time
+      delay:400,
       easing: 'easeOutExpo',
       loop: true,
-      direction: 'reverse' // Play the animation in reverse
-    });
-
-    var textBarAnimation = anime({
-      targets: '#text_wrapper span',
-      delay: function(el, i) { 
-        return i * 400; //delay to start next bars_wrapper animation
+      width: 75,
+      translateX: function(target, index) {
+        var targetClass = target.getAttribute('class');
+        var moveRight = 0;
+        if(targetClass == "red"){
+          moveRight = 80;
+        }
+        else if(targetClass == "blue"){
+          moveRight = 160;
+        }
+        return  moveRight
       },
-      opacity: 0,
-      height: {
-        value:0,
-        // direction: 'reverse'
-      },
-      duration: 5200, //total animation time
-      easing: 'easeOutExpo',
-      loop: true,
-      direction: 'reverse' // Play the animation in reverse
+      translateY: {
+        value: function(target, index) {
+          var moveY = target.getAttribute('data-position');
+          return  moveY
+        },
+        delay:800,
+        duration: 2000,
+      }
     });

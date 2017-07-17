@@ -2,8 +2,7 @@
 
 A simple SVIFT demo of animated charts
 
-### A simple layout sketch to showcase potential for SVIFT ###
+### A simple layout sketch to showcase potential for SVIFT in a online newspaper setting ###
 
-* HTML
-* CSS tranitions
-* d3
+* HTML / CSS
+* [Anime.js](http://animejs.com/)

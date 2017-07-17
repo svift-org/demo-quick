@@ -15,7 +15,7 @@
     width: 100%;
 	}
 
-  #chart {
+  #chart_1 {
     height: 200px;
     text-align: center;
     position: relative;
@@ -30,16 +30,16 @@
 
   #play, #pause{
     position: absolute;
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   #play{
-    top: 5%;
+    top: 0;
     left: calc(50% + 130px);
   }
 
   #pause{
-    top: 20%;
+    top: 15%;
     left:  calc(50% + 130px);
   }
 
@@ -51,6 +51,15 @@
     height: 200px;
     background-color: #A1A1A1;
     border-radius: 0px;
+    text-align: center;
+  }
+
+  .textBack{
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    /*text-transform: uppercase;*/
+    color: white;
+    padding-top: calc(50% - 15px);
+    font-size: 1.4em;
   }
 
   #accent{
@@ -59,8 +68,39 @@
     left: calc(50% - 100px);
     width: 200px;
     height: 200px;
-    background-color: #FFBE00;
+    background-color: #A1A1A1;
     border-radius: 0px;
+  }
+
+  .title{
+    position: absolute;
+    top: 105%;
+    left: calc(50% - 80px);
+    color: #A1A1A1;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  }
+
+  .legend{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    background-color: black;
+    height: 1px;
+    width: 0;
+  }
+
+  #legend-text{
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    position: absolute;
+    top: 4%;
+    left: 300px;
+    width: 100px;
+    color: white;
+    text-align: center;
+  }
+
+  .value{
+    font-size: 1em;
   }
 
 
@@ -73,13 +113,18 @@
 
 <body>
 	<div id ="top"><img src="img/top_rp.png"></div>
-	<div id ="chart">
-    <div id="back"></div>
+	<div id ="chart_1">
+  <div class = "title">Bundeshaushalt 2017</div>
+  <div class="legend"></div>
+  <div id="legend-text">Bildungsausgaben<br><span class="value">17%</span></div>
+    <div id="back">
+      <div class = "textBack">€ 329 <span class="unit">Mrd.</span></div>
+    </div>
     <div id="accent"></div>
-    <div id ="controls">
+    <!-- <div id ="controls">
       <div id ="play">Play</div>
       <div id ="pause">Pause</div>
-    </div>
+    </div> -->
   </div>
 	<div id ="bottom"><img src="img/bottom_rp.png"></div>
 <!-- <script src="index.js"></script> -->

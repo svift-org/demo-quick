@@ -4,21 +4,47 @@
   <script src="d3.js"></script>
   <style>
 
-  	img{
-  		padding: 0;
-  		margin: 0;
-  		height: auto;
-      width: 100%;
-  	}
+  body{
+    margin: 0px 10%;
+  }
 
-    #chart {
-      text-align: center;
-    }
+	img{
+		padding: 0;
+		margin: 0;
+		height: auto;
+    width: 100%;
+	}
 
-    /*#chart svg {
-      height: 300px;
-    }
-*/
+  #chart {
+    height: 200px;
+    text-align: center;
+    position: relative;
+    margin: 4% auto;
+  }
+
+  #back{
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    background-color: #A1A1A1;
+    border-radius: 0px;
+  }
+
+  #accent{
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    background-color: #FFBE00;
+    border-radius: 0px;
+  }
+
+
+
+
 
 
   </style>
@@ -26,7 +52,12 @@
 
 <body>
 	<div id ="top"><img src="img/top_rp.png"></div>
-	<div id ="chart"></div>
+	<div id ="chart">
+    <div id="back"></div>
+    <div id="accent"></div>
+  </div>
 	<div id ="bottom"><img src="img/bottom_rp.png"></div>
-<script src="index.js"></script>
+<!-- <script src="index.js"></script> -->
+<script src="js/anime.js"></script>
+<script src="js/animation.js"></script>
 </body>

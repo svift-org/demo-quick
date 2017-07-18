@@ -1,4 +1,4 @@
- body{
+  body{
     margin: 0px 10%;
     border: 1px solid #ECECEC;
   }
@@ -38,5 +38,11 @@
   #chart_3 iframe{
     height: 177px;
     width: 265px;
+    border: 0 none;
+  }
+
+  #chart_5 iframe{
+    height: 250px;
+    width: 800px;
     border: 0 none;
   }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>bars_wrapper</title>
+  
+  <style type="text/css">
+
+
+  html{
+    color: #a1a1a1;
+    font-family: "Lato","Helvetica","Arial",sans-serif;
+  }
+
+  .year_wrapper{
+    text-align: center;
+    width: 100%;
+  }
+    .year{
+      font-size: 50px;
+      width: 116px;
+      margin-bottom: -7px;
+      font-family: "Lato","Helvetica","Arial",sans-serif;
+       color: #a1a1a1;
+    }
+
+
+    #struggleWrapper {
+        width: 400px;
+    }
+
+    #struggleWrapper *{
+      /*display: inline-block;*/
+    }
+
+    #struggle_wrapper{
+      height: 200px;
+      width: 400px;
+      margin: 0;
+      padding: 0;
+      background-color: #A1A1A1;
+    }
+
+    input {
+      background-color: transparent;
+      border: 0 solid;   
+      font-size: 56px;
+      width: 70px;
+     }
+
+    .number  {
+      border: 0 solid;
+      padding-left: 5px;
+      position: fixed;
+      top: 220px;
+      width: 70px;
+      z-index: 1000;
+      color: white !important;
+    }
+
+    .number input{
+      font-size: 36px;
+      color: white;
+    }
+
+    .number-two{
+      padding-left: 350px;
+    }
+
+
+
+    .data{
+      background-color: #FFBE00;
+      width: 200px;
+      height: 100%;
+      /*float: left;*/
+    }
+
+
+  </style>
+
+  
+</head>
+
+<body>
+
+  <div id="struggleWrapper">
+  <div class="year_wrapper"><input class="year" value="2000"></div>
+    
+    <div id="struggle_wrapper">
+      <div class="number number-one"> <input class="text-output" value="50"></div>
+      <div class="bar data"></div>
+    </div>
+    <div class="number number-two"> <input class="text-output" value="50"></div>
+  </div>
+
+
+  <script src='../js/anime.js'></script>
+
+  <script type="text/javascript">
+
+
+  anime({
+    targets: '#struggle_wrapper .data',
+    width: [ { value: 100,duration: 1000,delay:500 }, { value: 50,duration: 1000,delay:500  }, { value: 250,duration: 1000,delay:500   }, { value: 350,duration: 1000,delay:500   }, { value: 350,duration: 1000,delay:500   }],
+    // duration: 4000,
+    // delay: 600,
+    loop:true,
+    delay: 600,
+    // easing: 'easeInOutExpo',
+
+  })
+
+  anime({
+    targets: '.number-one input',
+    value:[ { value: 25,duration: 1000 ,delay:500 }, { value: 12,duration: 1000,delay:500  }, { value: 60,duration: 1000,delay:500   }, { value: 90,duration: 1000,delay:500  }, { value: 90,duration: 1000,delay:500  }],
+    round: 1,
+    loop:true,
+    easing: 'easeInOutExpo',
+    // duration: 4000,
+    delay: 600,
+  });
+
+  anime({
+    targets: '.number-two input',
+    value:[ { value: 75,duration: 1000 ,delay:500 }, { value: 88,duration: 1000,delay:500  }, { value: 40,duration: 1000,delay:500   }, { value: 10,duration: 1000,delay:500  }, { value: 10,duration: 1000,delay:500  }],
+    round: 1,
+    loop:true,
+    easing: 'easeInOutExpo',
+    // duration: 4000,
+    delay: 600,
+  });
+
+
+  anime({
+    targets: '.year',
+    value:[ { value: 2005,duration: 1000 ,delay:500 }, { value: 2010,duration: 1000,delay:500  }, { value: 2015,duration: 1000,delay:500   }, { value: 2020,duration: 1000,delay:500  }, { value: 2020,duration: 1000,delay:500  }],
+    round: 1,
+    loop:true,
+    easing: 'easeInOutExpo',
+    // duration: 4000,
+    delay: 600,
+  });
+
+
+  </script>
+
+
+</body>
+</html>

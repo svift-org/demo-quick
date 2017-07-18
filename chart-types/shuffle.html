@@ -100,8 +100,8 @@
 
     var shuffelText= anime({
       targets: '#shuffelNumbers div',
-      duration: 4000, //total animation time
-      opacity:1,
+      // duration: 5000, //total animation time
+      opacity:[{value:1,duration:2000},{value:1,duration:3000}],
       easing: 'easeInExpo',
       loop: true,
     })

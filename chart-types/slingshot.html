@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>slingshot chart</title>
+</head>
+<body>
+
+  <style type="text/css">
+    #chart_2 {
+        height: 200px;
+        text-align: center;
+        position: relative;
+        margin: 5% auto;
+      }
+
+
+    .el{
+      position: absolute;
+      top: 30%;
+      left: calc(50% - 350px);
+      /*background-color: #A1A1A1;*/
+      height: 50px;
+      width: 50px;
+      border-radius: 400px;
+    }
+
+    .legend{
+      position: absolute;
+      top: 83%;
+      left: calc(50% - 330px);
+      height: 10px;
+      color: white;
+      font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+      line-height: 1.5;
+    }
+
+    .number{
+      color: #FFBE00;
+    }
+
+
+  </style>
+
+  <div id="one" class="el"></div>
+  <div id="two" class="el"></div>
+  <div id="three" class="el"></div>
+  <div>
+   <div id="item1" class="legend">Bildung<br><span class="number">9 Mrd</span></div>
+   <div id="item2" class="legend">Verteidigung<br><span class="number">14 Mrd</span></div>
+   <div id="item3" class="legend">Gesundheit<br>und Soziales<br><span class="number">23 Mrd</span></div>
+  </div>
+
+
+  <script src='../js/anime.js'></script>
+
+  <script type="text/javascript">
+    var data = [20, 30, 40]
+
+    var animatedDots = anime({
+      targets: '.el',
+      loop: false,
+      autostart: true,
+      duration: 3000,
+      autoplay: true,
+      backgroundColor: function(){
+        // var r = anime.random(0, 255);
+        // var g = anime.random(0, 255);
+        // var b = anime.random(0, 255);
+        // return "rgb(" + r + g + b +")";
+        return "#FFBE00";
+      },
+      translateX: function(target, index) {
+        return 10 + (index * 250);
+      },
+      translateY: function(target, index) {
+        return  (-10 * index);
+      },
+      width: function(target, index){
+        return 30 + (30 * index);
+      },
+      height: function(target, index){
+        return 30 + (30 * index);
+      }
+    });
+
+
+    var animatedLegend = anime({
+      targets: '.legend',
+      loop: false,
+      autostart: true,
+      duration: 3000,
+      autoplay: true,
+      color: "#A1A1A1",
+      translateX: function(target, index) {
+        return (index * 250);
+      }
+    });
+
+  </script>
+
+
+</body>
+</html>

@@ -1,15 +1,4 @@
 // Little Tree
-// var littleTree = anime({
-//   targets: '#back',
-//   borderRadius: 400,
-//   easing: 'easeInOutQuad',
-//   loop: false,
-//   duration: 3000,
-//   autoplay: true
-// });
-
-
-// Little Tree
 var littleTree = anime({
   targets: '#accent',
   backgroundColor: '#FFBE00',

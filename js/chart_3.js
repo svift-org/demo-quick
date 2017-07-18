@@ -5,7 +5,7 @@
       // },
       duration: 1000, //total animation time
       delay:400,
-      easing: 'easeOutExpo',
+      easing: 'easeOutQuint',
       loop: true,
       width: 75,
       translateX: function(target, index) {

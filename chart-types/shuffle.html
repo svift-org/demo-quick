@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>bars_wrapper</title>
+  
+  <style type="text/css">
+
+  #wrapper{
+/*    height: 200px;*/
+  }
+
+  #wrapper div {
+      height: 15px;
+      /*margin: 4px;*/
+      width: 225px;
+  }
+
+  .red{
+    background-color: #EB124F;
+  }
+  .blue{
+    background-color: #165C7C;
+  }
+  .yellow{
+    background-color: #FFBE00;
+  }
+
+
+  #shuffelNumbers div {
+      width: 75px;
+      display: inline-block;
+      text-align: center;
+      padding-top: 5px;
+      opacity: 0;
+  }
+
+  </style>
+
+  
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <div class="red" data-position="75"></div>
+    <div class="yellow" data-position="75"></div>
+    <div class="blue" data-position="75"></div>
+    <div class="yellow" data-position="60"></div>
+    <div class="red" data-position="30"></div>
+    <div class="red" data-position="30"></div>
+    <div class="blue" data-position="30"></div>
+    <div class="yellow" data-position="15"></div>
+    <div class="red" data-position="0"></div>
+  </div>
+  <div id="shuffelNumbers">
+    <div>30</div>
+    <div>40</div>
+    <div>20</div>
+  </div>
+  
+  <script src='../js/anime.js'></script>
+
+  <script type="text/javascript">
+    
+   var barAnimation = anime({
+      targets: '#wrapper div',
+      // delay: function(el, i) { 
+      //   return i * 100; //delay to start next bars_wrapper animation
+      // },
+      duration: 1000, //total animation time
+      delay:400,
+      easing: 'easeOutExpo',
+      loop: true,
+      width: 75,
+      translateX: function(target, index) {
+        var targetClass = target.getAttribute('class');
+        var moveRight = 0;
+        if(targetClass == "red"){
+          moveRight = 80;
+        }
+        else if(targetClass == "blue"){
+          moveRight = 160;
+        }
+        return  moveRight
+      },
+      translateY: {
+        value: function(target, index) {
+          var moveY = target.getAttribute('data-position');
+          return  moveY
+        },
+        delay:800,
+        duration: 2000,
+      }
+    });
+
+    var shuffelText= anime({
+      targets: '#shuffelNumbers div',
+      duration: 2800, //total animation time
+      opacity:1,
+      easing: 'easeInExpo',
+      loop: true,
+    })
+
+
+
+  </script>
+
+
+</body>
+</html>

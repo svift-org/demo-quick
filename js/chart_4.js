@@ -12,7 +12,7 @@
       duration: 5200, //total animation time
       easing: 'easeOutExpo',
       loop: true,
-      // direction: 'reverse' // Play the animation in reverse,
+      direction: 'reverse' // Play the animation in reverse,
     });
 
     var textBarAnimation = anime({
@@ -28,5 +28,5 @@
       duration: 5200, //total animation time
       easing: 'easeOutExpo',
       loop: true,
-      // direction: 'reverse' // Play the animation in reverse
+      direction: 'reverse' // Play the animation in reverse
     });

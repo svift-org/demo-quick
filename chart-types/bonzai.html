@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>bonzai chart</title>
+</head>
+<body>
+
+<style type="text/css">
+  #chart_1 {
+      text-align: center;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    #controls{
+      color: #A1A1A1;
+      font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+      text-transform: uppercase;
+    }
+
+    #play, #pause{
+      position: absolute;
+      font-size: 0.8em;
+    }
+
+    #play{
+      top: 0;
+      left: calc(50% + 130px);
+    }
+
+    #pause{
+      top: 15%;
+      left:  calc(50% + 130px);
+    }
+
+    #back{
+      position: absolute;
+      top: 0;
+      left: calc(50% - 100px);
+      width: 200px;
+      height: 200px;
+      background-color: #A1A1A1;
+      border-radius: 0px;
+      text-align: center;
+    }
+
+    .textBack{
+      font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+      /*text-transform: uppercase;*/
+      color: white;
+      padding-top: calc(50% - 15px);
+      font-size: 1.4em;
+    }
+
+    #accent{
+      position: absolute;
+      top: 0;
+      left: calc(50% - 100px);
+      width: 200px;
+      height: 200px;
+      background-color: #A1A1A1;
+      border-radius: 0px;
+    }
+
+    .title{
+      position: absolute;
+      top: 70%;
+      left: calc(50% - 80px);
+      color: #A1A1A1;
+      font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    }
+
+    .legend_1{
+      position: relative;
+      top: 20px;
+      left: 135px;
+      background-color: black;
+      height: 1px;
+      width: 0;
+    }
+
+    #legend_1-text{
+      font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+      position: absolute;
+      top: 4%;
+      left: 0px;
+      width: 100px;
+      color: white;
+      text-align: center;
+    }
+
+    .value{
+      font-size: 1em;
+    }
+
+
+</style>
+
+
+    <div id ="chart_1">
+    <div class = "title">Bundeshaushalt 2017</div>
+    <div class="legend_1"></div>
+    <div id="legend_1-text">Bildungsausgaben<br><span class="value">17%</span></div>
+      <div id="back">
+        <div class = "textBack">€ 329 <span class="unit">Mrd.</span></div>
+      </div>
+      <div id="accent"></div>
+      <!-- <div id ="controls">
+        <div id ="play">Play</div>
+        <div id ="pause">Pause</div>
+      </div> -->
+    </div>
+
+<script src='../js/anime.js'></script>
+
+<script type="text/javascript">
+
+  var littleTree = anime({
+    targets: '#accent',
+    backgroundColor: '#FFBE00',
+    height: '50px',
+    width: '50px',
+    // borderRadius: 40,
+    easing: 'easeInOutQuad',
+    loop: false,
+    duration: 3000,
+    autoplay: true
+  });
+
+
+  // var chartPlay = document.querySelector('#play');
+  // var chartPause = document.querySelector('#pause');
+  // chartPlay.onclick = littleTree.play;
+  // chartPause.onclick = littleTree.pause;
+
+
+
+  // // Little Tree Annotation
+  var littleTreeAnnotationLine  = anime({
+    targets: '.legend_1',
+    width: '50px',
+    easing: 'easeInOutQuad',
+    delay: 1500,
+    loop: false,
+    duration: 1000,
+    autoplay: true
+  });
+
+  var littleTreeAnnotationText  = anime({
+    targets: '#legend_1-text',
+    left: "0px",
+    color: "#FFBE00",
+    easing: 'easeInOutQuad',
+    delay: 1500,
+    loop: false,
+    duration: 1000,
+    autoplay: true
+  });
+
+</script>
+
+</body>
+</html>

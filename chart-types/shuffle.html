@@ -33,6 +33,9 @@
       text-align: center;
       padding-top: 5px;
       opacity: 0;
+      font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+      line-height: 1.5;
+      color: #A1A1A1;
   }
 
   </style>
@@ -69,7 +72,7 @@
       // delay: function(el, i) { 
       //   return i * 100; //delay to start next bars_wrapper animation
       // },
-      duration: 1000, //total animation time
+      duration: 5000, //total animation time
       delay:400,
       easing: 'easeOutExpo',
       loop: true,
@@ -90,14 +93,14 @@
           var moveY = target.getAttribute('data-position');
           return  moveY
         },
-        delay:800,
+        delay:2500,
         duration: 2000,
       }
     });
 
     var shuffelText= anime({
       targets: '#shuffelNumbers div',
-      duration: 2800, //total animation time
+      duration: 4000, //total animation time
       opacity:1,
       easing: 'easeInExpo',
       loop: true,

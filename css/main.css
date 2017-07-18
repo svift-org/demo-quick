@@ -1,5 +1,6 @@
  body{
     margin: 0px 10%;
+    border: 1px solid #ECECEC;
   }
 
   img{
@@ -7,4 +8,12 @@
     margin: 0;
     height: auto;
     width: 100%;
+  }
+
+  #logo img {
+    width: 300px;
+    height: auto;
+    margin-left: 285px;
+    margin-top: 6%;
+    margin-bottom: 2%;
   }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>flower chart</title>
+</head>
+<body>
+
+  <style type="text/css">
+
+    #chart_6 {
+        height: 200px;
+        text-align: center;
+        position: relative;
+        margin: 5% auto;
+      }
+
+      .leaf{
+        position: absolute;
+        top: 0%;
+        left: 30%;
+        height: 140px;
+        width: 1px;
+        background-color: #A1A1A1;
+        transform-origin: 140px 140px;
+      }
+
+      .highlight{
+        position: absolute;
+        top: 0%;
+        left: 30%;
+        height: 240px;
+        width: 1px;
+        background-color: #A1A1A1;
+      }
+
+  </style>
+
+  <script src='../js/anime.js'></script>
+  <script type="text/javascript">
+
+
+
+  for (var i = 0; i <= 17 ; i++) {
+    var leaf = document.createElement('div');
+    leaf.className = "leaf";
+    leaf.innerHTML = "";
+    document.body.appendChild(leaf);
+  }
+
+
+   for (var i = 0; i <= 9 ; i++) {
+    var highlight = document.createElement('div');
+    highlight.className = "highlight";
+    highlight.innerHTML = "";
+    document.body.appendChild(highlight);
+  }
+
+  var animatedLeafsMain = anime({
+    targets: '.leaf',
+    loop: false,
+    autostart: true,
+    duration: 2000,
+    height: "240px",
+    rotate:  function(target, index) { 
+      return index *10
+    },
+     easing: 'easeOutQuad',
+     backgroundColor: function(){
+        return "#FFBE00";
+    },
+  });
+
+    var animatedLeafsHighlight = anime({
+    targets: '.highlight',
+    loop: false,
+    autostart: true,
+    duration: 2000,
+    height: "240px",
+    translateX: "270px",
+    rotate:  function(target, index) { 
+      return index *10
+    },
+     easing: 'easeOutQuad',
+     backgroundColor: function(){
+        return "#000";
+    },
+  });
+    
+
+  </script>
+
+
+</body>
+</html>

@@ -19,7 +19,7 @@
         position: absolute;
         top: 0%;
         left: 30%;
-        height: 120px;
+        height: 90px;
         width: 1px;
         background-color: #A1A1A1;
         transform-origin: 100% 100%;
@@ -29,13 +29,32 @@
         position: absolute;
         top: 0%;
         left: 30%;
-        height: 120px;
+        height: 90px;
         width: 1px;
         background-color: #A1A1A1;
         transform-origin: 100% 100%;
       }
 
+      .label-1{
+        position: absolute;
+        bottom: 0%;
+        left: 25%;
+        font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+        color: #A1A1A1;
+      }
+
+      .label-2{
+        position: absolute;
+        bottom: 00%;
+        right: 25%;
+        font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+        color: #FFBE00;
+      }
+
   </style>
+
+  <div class="label-1">Bundeshaushalt:<br>€ 329 Mrd.</div>
+  <div class="label-2">Bildungsausgaben<br>17%</div>
 
   <script src='../js/anime.js'></script>
   <script type="text/javascript">
@@ -62,14 +81,13 @@
     loop: false,
     autostart: true,
     duration: 2000,
-    // height: "120px",
     rotate:  function(target, index) { 
       return index *10
     },
      easing: 'easeOutQuad',
-     backgroundColor: function(){
-        return "#FFBE00";
-    },
+    //  backgroundColor: function(){
+    //     return "#FFBE00";
+    // },
   });
 
     var animatedLeafsHighlight = anime({
@@ -84,7 +102,7 @@
     },
      easing: 'easeOutQuad',
      backgroundColor: function(){
-        return "#000";
+        return "#FFBE00";
     },
   });
     

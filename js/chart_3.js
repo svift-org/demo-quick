@@ -28,3 +28,11 @@
         duration: 2000,
       }
     });
+
+    var shuffelText= anime({
+      targets: '#shuffelNumbers div',
+      duration: 2800, //total animation time
+      opacity:1,
+      easing: 'easeInExpo',
+      loop: true,
+    })

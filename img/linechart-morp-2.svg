@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="720px" height="340px" viewBox="0 0 720 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Line - Basic Smooth Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Line---Basic-Smooth-Copy-2">
+            <g id="Y-Axis" transform="translate(20.000000, 25.000000)" font-size="10" font-family="Lato-Light, Lato" line-spacing="18" fill="#000000" font-weight="300">
+                <text id="Y-Label">
+                    <tspan x="27" y="266">0</tspan>
+                </text>
+                <text id="Y-Label">
+                    <tspan x="12" y="202">250</tspan>
+                </text>
+                <text id="Y-Label">
+                    <tspan x="12" y="138">500</tspan>
+                </text>
+                <text id="Y-Label">
+                    <tspan x="0" y="74">1,000</tspan>
+                </text>
+                <text id="Y-Label">
+                    <tspan x="0" y="10">1,250</tspan>
+                </text>
+            </g>
+            <g id="X-Axis" transform="translate(63.000000, 298.000000)" font-size="12" font-family="Lato-Light, Lato" line-spacing="18" fill="#000000" font-weight="300">
+                <text id="X-Label">
+                    <tspan x="0" y="12">Jan</tspan>
+                </text>
+                <text id="X-Label">
+                    <tspan x="54" y="12">Feb</tspan>
+                </text>
+                <text id="Mär">
+                    <tspan x="108" y="12">Mär</tspan>
+                </text>
+                <text id="X-Label">
+                    <tspan x="162" y="12">Apr</tspan>
+                </text>
+                <text id="Mai">
+                    <tspan x="216" y="12">Mai</tspan>
+                </text>
+                <text id="X-Label">
+                    <tspan x="270" y="12">Jun</tspan>
+                </text>
+                <text id="X-Label">
+                    <tspan x="324" y="12">Jul</tspan>
+                </text>
+                <text id="X-Label">
+                    <tspan x="378" y="12">Aug</tspan>
+                </text>
+                <text id="X-Label">
+                    <tspan x="432" y="12">Sep</tspan>
+                </text>
+                <text id="Okt">
+                    <tspan x="486" y="12">Okt</tspan>
+                </text>
+                <text id="Nov">
+                    <tspan x="540" y="12">Nov</tspan>
+                </text>
+                <text id="Dez">
+                    <tspan x="594" y="12">Dez</tspan>
+                </text>
+            </g>
+            <g id="Grid" transform="translate(63.000000, 32.000000)" stroke-opacity="0.5" stroke="#000000">
+                <path d="M0,257 L632,257" id="Primary-Axis"></path>
+                <path d="M0,193 L632,193" id="Horizontal-Gridline" stroke-dasharray="1,8"></path>
+                <path d="M0,129 L632,129" id="Horizontal-Gridline" stroke-dasharray="1,8"></path>
+                <path d="M0,65 L632,65" id="Horizontal-Gridline" stroke-dasharray="1,8"></path>
+                <path d="M0,1 L632,1" id="Horizontal-Gridline" stroke-dasharray="1,8"></path>
+            </g>
+            <g id="Line" transform="translate(79.000000, 69.000000)">
+                <path d="M3,187 C27.5,187 30.0228325,125.666667 57.045665,125.666667 C84.0684975,125.666667 84.0684975,162.466667 111.09133,162.466667 C138.114162,162.466667 138.114162,3 165.136995,3 C192.159827,3 192.159827,76.6 219.18266,76.6 C246.205492,76.6 246.205492,125.666667 273.228325,125.666667 C300.251157,125.666667 300.251157,88.8666667 327.27399,88.8666667 C354.296822,88.8666667 354.296822,150.2 381.319655,150.2 C408.342487,150.2 408.342487,52.0666667 435.36532,52.0666667 C462.388152,52.0666667 462.388152,15.2666667 489.410985,15.2666667 C516.433817,15.2666667 516.433817,76.6 543.45665,76.6 C570.479482,76.6 567.999995,187 597.502315,187" stroke="#FFBE00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Data-Points" fill="#FFBE00">
+                    <rect id="Data-Point" x="0" y="184" width="6" height="6" rx="3"></rect>
+                    <rect id="Data-Point" x="54" y="123" width="6" height="6" rx="3"></rect>
+                    <rect id="Data-Point" x="108" y="159" width="6" height="6" rx="3"></rect>
+                    <rect id="Data-Point" x="162" y="0" width="6" height="6" rx="3"></rect>
+                    <rect id="Data-Point" x="216" y="74" width="6" height="6" rx="3"></rect>
+                    <rect id="Data-Point" x="270" y="123" width="6" height="6" rx="3"></rect>
+                    <rect id="Data-Point" x="324" y="86" width="6" height="6" rx="3"></rect>
+                    <rect id="Data-Point" x="378" y="147" width="6" height="6" rx="3"></rect>
+                    <rect id="Data-Point" x="432" y="50" width="6" height="6" rx="3"></rect>
+                    <rect id="Data-Point" x="486" y="13" width="6" height="6" rx="3"></rect>
+                    <rect id="Data-Point" x="540" y="74" width="6" height="6" rx="3"></rect>
+                    <rect id="Data-Point" x="594" y="184" width="6" height="6" rx="3"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

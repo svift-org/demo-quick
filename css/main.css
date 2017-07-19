@@ -22,7 +22,8 @@
     margin-bottom: 2%;
   }
 
-  #chart_1, #chart_2, #chart_3,#chart_4,#chart_5,#chart_6,#chart_7, #chart_8,#chart_9 {
+
+  #chart_1, #chart_2, #chart_3,#chart_4,#chart_5,#chart_6,#chart_7, #chart_8,#chart_9, #chart_10 {
     text-align: center;
   }
 
@@ -45,6 +46,13 @@
     border: 0 none;
   }
 
+
+  #chart_4 iframe{
+    height: 245px;
+    width: 265px;
+    border: 0 none;
+  }
+
   #chart_5 iframe{
     height: 250px;
     width: 800px;
@@ -61,16 +69,32 @@
     border: 0 none;
     height: 300px;
     width: 410px;
-}
+  }
 
-#chart_8 iframe {
-    border: 0 none;
-    height: 350px;
-    width: 800px;
-}
+  #chart_8 iframe {
+      border: 0 none;
+      height: 350px;
+      width: 800px;
+  }
 
+  #chart_9 iframe {
+      border: 0 none;
+      height: 350px;
+      width: 800px;
+  }
+
+  #chart_10 iframe {
+      border: 0 none;
+      height: 150px;
+      width: 800px;
+  }
+
+
+<<<<<<< HEAD
 #chart_9 iframe {
     border: 0 none;
     height: 500px;
     width: 800px;
 }
+=======
+>>>>>>> origin/master

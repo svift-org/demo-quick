@@ -23,7 +23,7 @@
   }
 
 
-  #chart_1, #chart_2, #chart_3,#chart_4,#chart_5,#chart_6,#chart_7, #chart_8,#chart_9, #chart_10, #chart_11 {
+  #chart_1, #chart_2, #chart_3,#chart_4,#chart_5,#chart_6,#chart_7, #chart_8,#chart_9, #chart_10, #chart_11,#chart_12,#chart_13 {
     text-align: center;
   }
 
@@ -93,6 +93,18 @@
   #chart_11 iframe {
       border: 0 none;
       height: 260px;
-
   }
+
+
+  #chart_12 iframe {
+      border: 0 none;
+      height: 260px;
+  }
+
+  #chart_13 iframe {
+      border: 0 none;
+      height: 260px;
+  }
+
+
 

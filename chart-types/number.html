@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>bars_wrapper</title>
+  
+  <style type="text/css">
+
+
+    body{
+      font-family: "Lato","Helvetica","Arial",sans-serif;
+      color: #a1a1a1;
+    }
+
+
+    #header, #wrapper{
+/*      border: 1px solid #ccc;
+      border-width: 1px 0 0 1px;*/
+      width: 253px;
+      padding-top: 5px;
+      text-align: center;
+    }
+
+
+    #number input{
+      background-color: white;
+      border: 0 solid;
+      color: #FFBE00;
+      font-size: 150px;
+      text-align: center;
+      width: 253px;
+      height: 127px;
+      font-weight: bold;
+    }
+
+
+  </style>
+
+  
+</head>
+
+<body>
+
+  <div id="header">Anzahl der Streikenden</div>
+  <div id="wrapper">
+
+  <div id="number">
+    <input class="text-output" value="0">
+  </div>
+  
+  <script src='../js/anime.js'></script>
+
+  <script type="text/javascript">
+    
+
+  var ainmation = anime({
+    targets: 'input',
+    value:320,
+    duration: 4000,
+    round: 1,
+    easing: 'easeInOutExpo',
+    delay: 600,
+    complete: function(anim) {
+      setTimeout(function(){
+        ainmation.restart()
+      },2000)
+    }
+  });
+
+
+  </script>
+
+
+</body>
+</html>

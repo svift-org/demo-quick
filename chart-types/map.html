@@ -34,8 +34,8 @@
               <path id="route" d="M345.605698,191.727264 C327.285514,199.107958 338.821294,219.718263 341.746981,234.31379 C346.332159,257.18811 343.332884,240.86943 339.400107,248.720253 C339.050387,249.418383 338.980814,250.404034 339.400107,251.062732 C348.212988,264.907498 358.582479,274.201126 356.592934,292.084675 C353.850581,316.735035 323.178115,311.848565 308.583109,320.607539 C294.296025,329.181718 296.613049,337.054946 289.047803,350.299445 C283.840716,359.41551 271.772149,362.798932 265.609832,374.128562 C254.894549,393.828975 251.716468,415.564829 255.839982,438.88733 C261.615479,471.553408 271.711782,433.511955 273.032809,454.124428 C273.939031,468.264558 273.032809,482.462707 273.032809,496.631846" id="Path-2" stroke="#FFF"></path>
               <ellipse id="Oval" fill="#D8D8D8" cx="352" cy="186" rx="10" ry="10"></ellipse>
               <ellipse id="Oval2" fill="#D8D8D8" cx="274" cy="501" rx="10" ry="10"></ellipse>
-              <text x="352" y="186" fill="red">Berlin</text>
-              <text x="320" y="505" fill="#A1A1A1">München</text>
+              <text font-family="Lato-Light, Lato" line-spacing="18" font-weight="400" x="370" y="190" fill="#A1A1A1">Berlin</text>
+              <text font-family="Lato-Light, Lato" line-spacing="18" font-weight="400" x="295" y="505" fill="#A1A1A1">München</text>
           </g>
       </g>
   </svg>
@@ -43,8 +43,6 @@
 
 
 
-
-    
 
 <script src='../js/anime.js'></script>
 
@@ -62,7 +60,7 @@ var routeAnimate  = anime({
   autoplay: true,
   complete: function(anim) {
               setTimeout(function(){
-                morphing.restart()
+                routeAnimate.restart()
               },2000)
           }
 });
@@ -79,7 +77,7 @@ var citiesAnimate  = anime({
   autoplay: true,
   complete: function(anim) {
               setTimeout(function(){
-                morphing.restart()
+                citiesAnimate.restart()
               },2000)
           }
 });

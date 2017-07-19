@@ -51,7 +51,8 @@
   font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
   line-height: 1.5;
   color: #A1A1A1;
-  opacity: 0;
+  opacity: 1;
+  /*opacity: 0*/
 }
 
 
@@ -105,17 +106,28 @@ var animatedDots = anime({
     },
   easing: 'easeOutQuad',
   direction: 'reverse',
-  loop: true,
-  backgroundColor: "#A1A1A1"
+  // loop: true,
+  backgroundColor: "#A1A1A1",
+      complete: function(anim) {
+      setTimeout(function(){
+        animatedDots.restart()
+      },2000)
+    }
 });
 
-var animatedLabel = anime({
-  targets: '.label',
-  autostart: true,
-  delay: 2500,
-  duration: 5000,
-  opacity: 1
-});
+// var animatedLabel = anime({
+//   targets: '.label',
+//   autostart: true,
+//   // delay: 2500,
+//   duration: 3000,
+//   opacity: 1,
+//         complete: function(anim) {
+//       setTimeout(function(){
+//         animatedLabel.restart()
+//       },5000)
+//     }
+
+// });
 
 
 // var animatedBigDot = anime({

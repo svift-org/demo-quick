@@ -13,16 +13,44 @@
   font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
   line-height: 1.5;
   color: #A1A1A1;
-  margin-bottom: 3px;
+  margin-bottom: 80px;
+}
+
+.container{
+  height: 500px;
+  width: 800px;
 }
 
 .dots{
   position: absolute;
-  height: 10px;
-  width: 10px;
-  background-color: #A1A1A1;
+  height: 100px;
+  width: 100px;
+  left: 350px;
+  top: 150px;
+  background-color: #FFBE00;
   border-radius: 1000px;
- /* transform-origin: 100% 100%;*/
+  /*transform-origin: 100% 100%;*/
+}
+
+.bigDot{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 350px;
+  top: 200px;
+  background-color: #FFBE00;
+  border-radius: 1000px;
+}
+
+.label{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 380px;
+  top: 280px;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.5;
+  color: #A1A1A1;
 }
 
 
@@ -30,27 +58,67 @@
 
 
 
-
+<div class="title">Anzahl der streikenden Lufthansa-Piloten, July 2017</div>
+<div class="label">1.051</div>
 
 
 <script src='../js/anime.js'></script>
 
 <script type="text/javascript">
 
+
 var container = document.body.appendChild(document.createElement('div'));
 container.className = "container";
 
-for (var i = 0; i <= 50 ; i++) {
+var offsetY = anime.random(50,300) + 'px';
+var offsetX = anime.random(100,700) + 'px';
+
+// var bigDot = document.createElement('div');
+// bigDot.className = "bigDot";
+// bigDot.style.zIndex = 70;
+// container.appendChild(bigDot);
+
+
+
+for (var i = 0; i <= 100 ; i++) {
   var dots = document.createElement('div');
   dots.className = "dots";
   dots.innerHTML = "";
+  dots.style.zIndex = 7;
 
-  var offsetY = anime.random(50,300) + 'px';
-  var offsetX = anime.random(100,700) + 'px';
-  dots.style.top = offsetY;
-  dots.style.left = offsetX;
   container.appendChild(dots);
 }
+
+var animatedDots = anime({
+  targets: '.dots',
+  autostart: true,
+  delay: 2000,
+  duration: 5000,
+  height: "1px",
+  width: "1px",
+  translateY: function(target, index) { 
+      return anime.random(-200,200)
+    },
+  translateX: function(target, index) { 
+      return anime.random(-350,350)
+    },
+  easing: 'easeOutQuad',
+  direction: 'reverse',
+  loop: true,
+  backgroundColor: "#A1A1A1"
+});
+
+
+// var animatedBigDot = anime({
+//   targets: '.bigDot',
+//   autostart: true,
+//   delay: 2000,
+//   duration: 4000,
+//   opacity: 0,
+//   easing: 'easeOutQuad',
+//   direction: 'reverse',
+//   loop: true
+// });
 
 
 

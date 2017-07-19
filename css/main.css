@@ -98,7 +98,8 @@
 
   #chart_12 iframe {
       border: 0 none;
-      height: 260px;
+      height: 350px;
+      width: 800px;
   }
 
   #chart_13 iframe {

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>materialize chart</title>
+</head>
+<body>
+
+<style type="text/css">
+
+.title{
+  text-align: center;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.5;
+  color: #A1A1A1;
+  margin-bottom: 0;
+}
+
+
+</style>
+
+<div class="title">Anzahl Facebook-Kommentare bei tagesschau.de, 2016–2017</div>
+
+
+    <svg width="720px" height="340px" viewBox="0 0 720 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Line---Basic-Smooth-Copy-2">
+                <g id="Y-Axis" transform="translate(20.000000, 25.000000)" font-size="14" style="stroke:none; fill:#A1A1A1" font-family="Lato-Light, Lato" line-spacing="18" fill="#000000" font-weight="400">
+                    <text id="Y-Label">
+                        <tspan x="27" y="266">0</tspan>
+                    </text>
+                    <text id="Y-Label">
+                        <tspan x="12" y="202">250</tspan>
+                    </text>
+                    <text id="Y-Label">
+                        <tspan x="12" y="138">500</tspan>
+                    </text>
+                    <text id="Y-Label">
+                        <tspan x="0" y="74">1,000</tspan>
+                    </text>
+                    <text id="Y-Label">
+                        <tspan x="0" y="10">1,250</tspan>
+                    </text>
+                </g>
+                <g id="X-Axis" transform="translate(63.000000, 298.000000)" font-size="14" font-family="Lato-Light, Lato" line-spacing="18" fill="#000000" font-weight="400" style="stroke:none; fill:#A1A1A1">
+                    <text id="X-Label">
+                        <tspan x="0" y="12">Jan</tspan>
+                    </text>
+                    <text id="X-Label">
+                        <tspan x="54" y="12">Feb</tspan>
+                    </text>
+                    <text id="Mär">
+                        <tspan x="108" y="12">Mär</tspan>
+                    </text>
+                    <text id="X-Label">
+                        <tspan x="162" y="12">Apr</tspan>
+                    </text>
+                    <text id="Mai">
+                        <tspan x="216" y="12">Mai</tspan>
+                    </text>
+                    <text id="X-Label">
+                        <tspan x="270" y="12">Jun</tspan>
+                    </text>
+                    <text id="X-Label">
+                        <tspan x="324" y="12">Jul</tspan>
+                    </text>
+                    <text id="X-Label">
+                        <tspan x="378" y="12">Aug</tspan>
+                    </text>
+                    <text id="X-Label">
+                        <tspan x="432" y="12">Sep</tspan>
+                    </text>
+                    <text id="Okt">
+                        <tspan x="486" y="12">Okt</tspan>
+                    </text>
+                    <text id="Nov">
+                        <tspan x="540" y="12">Nov</tspan>
+                    </text>
+                    <text id="Dez">
+                        <tspan x="594" y="12">Dez</tspan>
+                    </text>
+                </g>
+                <g id="Grid" transform="translate(63.000000, 32.000000)" stroke-opacity="0.5" stroke="#000000">
+                    <path d="M0,257 L632,257" id="Primary-Axis"></path>
+                    <path d="M0,193 L632,193" id="Horizontal-Gridline" stroke-dasharray="1,8"></path>
+                    <path d="M0,129 L632,129" id="Horizontal-Gridline" stroke-dasharray="1,8"></path>
+                    <path d="M0,65 L632,65" id="Horizontal-Gridline" stroke-dasharray="1,8"></path>
+                    <path d="M0,1 L632,1" id="Horizontal-Gridline" stroke-dasharray="1,8"></path>
+                </g>
+                <g id="Line" transform="translate(82.000000, 72.000000)" stroke-linecap="round" stroke-width="2" stroke="#FFBE00" stroke-linejoin="round">
+                    <polyline id="shape" points="-2.72848411e-12 184 54.045665 122.666667 114.199451 159.093375 162.136995 0 218.449526 73.6 264.940451 122.666667 324.27399 85.8666667 386.510674 147.896895 439.315181 48.8082582 486.410985 12.2666667 540.45665 73.6 594.502315 184"></polyline>
+                </g>
+            </g>
+        </g>
+    </svg>
+
+<script src='../js/anime.js'></script>
+
+<script type="text/javascript">
+
+
+var morphing = anime({
+  targets: '#shape',
+  points: "-2.72848411e-12 200 53.1111685 214.15017 110.030558 101.866667 159.712757 127.833913 216.526142 28.2666667 278 168.799684 329.984269 200 379.618285 188.400808 433.106996 0.518157883 487.453376 101.866667 538.696727 28.2666667 594.502315 200",
+  easing: 'easeOutQuad',
+  duration: 4000,
+  loop: true,
+  complete: function(anim) {
+              setTimeout(function(){
+                morphing.restart()
+              },2000)
+          }
+});
+
+
+
+</script>
+
+</body>
+</html>

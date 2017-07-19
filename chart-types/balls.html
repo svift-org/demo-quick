@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>balls</title>
+
+  <style type="text/css">
+
+    body{
+      font-family: "Lato","Helvetica","Arial",sans-serif;
+      color: #a1a1a1;
+    }
+
+    .inner {
+      position: absolute;
+    }
+
+    #header{
+      line-height: 1.5;
+      padding-bottom: 20px;
+    }
+
+    #center-line {
+        border-right: 2px dashed #a1a1a1;
+        height: 33px;
+        width: 155px;
+        position: absolute;
+    }
+
+    #center-line span{
+      position: relative;
+      float: right;
+      bottom: -39px;
+      left: 19px;
+    }
+
+    #animaton-one {
+        padding-left: 140px;
+    }
+
+    .wrapper-single-ani *{
+      /*display: inline-block;*/
+      position: absolute;
+    }
+
+    .circle{
+      width: 30px;
+      height:30px;
+      border-radius: 30px;
+/*      opacity: 0.5;*/
+font-weight: bold;
+    }
+
+.line {
+    border-top: 2px dashed #A1A1A1;
+    height: 1px;
+    top: 14px;
+    margin-left: 30px;
+    }
+
+    .color-one{
+      background-color: #FFBE00;
+    }
+
+    .color-two{
+      background-color: #101E42;
+      margin-left: 0px;
+    }
+
+
+    .color-one .label{
+      right: 17px;
+      top: 7px;
+      color: #a1a1a1;
+    }
+
+    .color-two .label{
+      color: #a1a1a1;
+      left: 33px;
+      top: 7px;
+    }
+
+    
+
+    .label{
+      font-size: 12px;
+      padding-bottom: 5px;
+      position: relative;
+    }
+
+  </style>
+
+  
+</head>
+
+<body>
+
+  <div id="header">Unterstützen Sie die Afd?</div>
+  <div id="center-line"><span>0%</span></div>
+  <div id="animaton-one" class="wrapper-single-ani">
+    <div class="circle color-one"><div class="label">Ja</div></div>
+    <div class="line"></div>
+    <div class="circle color-two"><div class="label">Nein</div></div>
+    
+  </div>
+
+
+
+  <script src='../js/anime.js'></script>
+
+  <script type="text/javascript">
+
+   var barAnimation = anime({
+      targets: '#animaton-one',
+      duration: 5000, //total animation time
+      delay:400,
+      easing: 'easeOutExpo',
+      loop: true,
+      translateX: -90
+    });
+
+   var barAnimation = anime({
+      targets: '.color-two',
+      duration: 5000, //total animation time
+      delay:400,
+      easing: 'easeOutExpo',
+      loop: true,
+      marginLeft: 150,
+    });
+
+   var barAnimation = anime({
+      targets: '.line',
+      duration: 5000, //total animation time
+      delay:400,
+      easing: 'easeOutExpo',
+      loop: true,
+      width: 150,
+    });
+
+    // var barAnimation = anime({
+    //   targets: '.circle',
+    //   duration: 5000, //total animation time
+    //   delay:400,
+    //   easing: 'easeOutExpo',
+    //   loop: true,
+    //   opacity: 1
+    // });
+
+  </script>
+
+
+</body>
+</html>

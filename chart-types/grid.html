@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>bars_wrapper</title>
+  
+  <style type="text/css">
+
+
+    body{
+      font-family: "Lato","Helvetica","Arial",sans-serif;
+      color: #a1a1a1;
+    }
+
+
+    #wrapper{
+/*      border: 1px solid #ccc;
+      border-width: 1px 0 0 1px;*/
+      width: 220px;
+      padding-top: 5px;
+    }
+
+    #wrapper *{
+      background-color: #a1a1a1;
+      border: 1px solid #fff;
+      float: left;
+      height: 20px;
+      width: 20px;
+    }
+
+    .highlight{
+/*      background-color: #FFBE00 !important;*/
+    }
+
+  </style>
+
+  
+</head>
+
+<body>
+
+<div>68 % Der Deutschen sind doof</div>
+  <div id="wrapper">
+
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span>
+    <span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span>
+    <span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span>
+    <span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span>
+    <span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span>
+<span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span>
+    <span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span>
+    <span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span>
+    <span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span>
+<span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span>
+    <span class="highlight"></span><span class="highlight"></span><span class="highlight"></span><span class="highlight"></span>
+
+
+  </div>
+  
+  <script src='../js/anime.js'></script>
+
+  <script type="text/javascript">
+    
+   var barAnimation = anime({
+      targets: '#wrapper .highlight',
+      easing: 'easeOutExpo',
+      delay: function(el, i) { 
+        return i * 40; //delay to start next bars_wrapper animation
+      },
+      backgroundColor: "#FFBE00",
+      complete: function(anim) {
+          setTimeout(function(){
+            barAnimation.restart()
+          },2000)
+      }
+    });
+
+
+
+  </script>
+
+
+</body>
+</html>

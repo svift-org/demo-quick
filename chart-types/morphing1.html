@@ -87,7 +87,7 @@
                     <path d="M0,65 L632,65" id="Horizontal-Gridline" stroke-dasharray="1,8"></path>
                     <path d="M0,1 L632,1" id="Horizontal-Gridline" stroke-dasharray="1,8"></path>
                 </g>
-                <g id="Line" transform="translate(82.000000, 72.000000)" stroke-linecap="round" stroke-width="2" stroke="#FFBE00" stroke-linejoin="round">
+                <g id="Line" transform="translate(82.000000, 72.000000)" stroke-linecap="round" stroke-width="3" stroke="#FFBE00" stroke-linejoin="round">
                     <polyline id="shape" points="-2.72848411e-12 184 54.045665 122.666667 114.199451 159.093375 162.136995 0 218.449526 73.6 264.940451 122.666667 324.27399 85.8666667 386.510674 147.896895 439.315181 48.8082582 486.410985 12.2666667 540.45665 73.6 594.502315 184"></polyline>
                 </g>
             </g>
@@ -105,6 +105,7 @@ var morphing = anime({
   easing: 'easeOutQuad',
   duration: 4000,
   loop: true,
+  stroke: "#037AFF",
   complete: function(anim) {
               setTimeout(function(){
                 morphing.restart()

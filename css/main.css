@@ -18,7 +18,7 @@
     margin-bottom: 2%;
   }
 
-  #chart_1, #chart_2, #chart_3,#chart_4,#chart_5,#chart_6,#chart_7 {
+  #chart_1, #chart_2, #chart_3,#chart_4,#chart_5,#chart_6,#chart_7, #chart_8 {
     text-align: center;
   }
 
@@ -57,4 +57,10 @@
     border: 0 none;
     height: 289px;
     width: 410px;
+}
+
+#chart_8 iframe {
+    border: 0 none;
+    height: 350px;
+    width: 800px;
 }

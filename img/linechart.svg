@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="340" style="background:#FFFFFF">
+  <g fill="none" fill-rule="evenodd">
+    <g fill="#000" font-size="10" font-family="Lato-Light, Lato" font-weight="300">
+      <text transform="translate(20 25)">
+        <tspan x="27" y="266">0</tspan>
+      </text>
+      <text transform="translate(20 25)">
+        <tspan x="12" y="202">250</tspan>
+      </text>
+      <text transform="translate(20 25)">
+        <tspan x="12" y="138">500</tspan>
+      </text>
+      <text transform="translate(20 25)">
+        <tspan x="0" y="74">1,000</tspan>
+      </text>
+      <text transform="translate(20 25)">
+        <tspan x="0" y="10">1,250</tspan>
+      </text>
+    </g>
+    <g fill="#000" font-size="12" font-family="Lato-Light, Lato" font-weight="300">
+      <text transform="translate(63 298)">
+        <tspan x="0" y="12">Jan</tspan>
+      </text>
+      <text transform="translate(63 298)">
+        <tspan x="54" y="12">Feb</tspan>
+      </text>
+      <text transform="translate(63 298)">
+        <tspan x="108" y="12">Mär</tspan>
+      </text>
+      <text transform="translate(63 298)">
+        <tspan x="162" y="12">Apr</tspan>
+      </text>
+      <text transform="translate(63 298)">
+        <tspan x="216" y="12">Mai</tspan>
+      </text>
+      <text transform="translate(63 298)">
+        <tspan x="270" y="12">Jun</tspan>
+      </text>
+      <text transform="translate(63 298)">
+        <tspan x="324" y="12">Jul</tspan>
+      </text>
+      <text transform="translate(63 298)">
+        <tspan x="378" y="12">Aug</tspan>
+      </text>
+      <text transform="translate(63 298)">
+        <tspan x="432" y="12">Sep</tspan>
+      </text>
+      <text transform="translate(63 298)">
+        <tspan x="486" y="12">Okt</tspan>
+      </text>
+      <text transform="translate(63 298)">
+        <tspan x="540" y="12">Nov</tspan>
+      </text>
+      <text transform="translate(63 298)">
+        <tspan x="594" y="12">Dez</tspan>
+      </text>
+    </g>
+    <g stroke="#000" stroke-opacity=".5">
+      <path d="M63 289h632"/>
+      <path d="M63 225h632M63 161h632M63 97h632M63 33h632" stroke-dasharray="1 8"/>
+    </g>
+    <path stroke="#FFBE00" stroke-width="2" d="M82 256c24.5 0 27.0228-61.3333 54.0457-61.3333 27.0228 0 27.0228 36.8 54.0456 36.8C217.1143 231.4667 217.1143 72 244.137 72c27.0228 0 27.0228 73.6 54.0457 73.6 27.0228 0 27.0228 49.0667 54.0456 49.0667 27.023 0 27.023-36.8 54.0457-36.8 27.0228 0 27.0228 61.3333 54.0457 61.3333 27.0228 0 27.0228-98.1333 54.0456-98.1333 27.023 0 27.023-36.8 54.0457-36.8 27.0228 0 27.0228 61.3333 54.0456 61.3333C649.4796 145.6 647 256 676.5023 256" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#FFBE00" transform="translate(79 69)">
+      <rect width="6" height="6" y="184" rx="3"/>
+      <rect width="6" height="6" x="54" y="123" rx="3"/>
+      <rect width="6" height="6" x="108" y="159" rx="3"/>
+      <rect width="6" height="6" x="162" rx="3"/>
+      <rect width="6" height="6" x="216" y="74" rx="3"/>
+      <rect width="6" height="6" x="270" y="123" rx="3"/>
+      <rect width="6" height="6" x="324" y="86" rx="3"/>
+      <rect width="6" height="6" x="378" y="147" rx="3"/>
+      <rect width="6" height="6" x="432" y="50" rx="3"/>
+      <rect width="6" height="6" x="486" y="13" rx="3"/>
+      <rect width="6" height="6" x="540" y="74" rx="3"/>
+      <rect width="6" height="6" x="594" y="184" rx="3"/>
+    </g>
+  </g>
+</svg>

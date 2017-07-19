@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>materialize chart</title>
+</head>
+<body>
+
+<style type="text/css">
+
+.title{
+  text-align: center;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.5;
+  color: #A1A1A1;
+  margin-bottom: 3px;
+}
+
+.dots{
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #A1A1A1;
+  border-radius: 1000px;
+ /* transform-origin: 100% 100%;*/
+}
+
+
+</style>
+
+
+
+
+
+
+<script src='../js/anime.js'></script>
+
+<script type="text/javascript">
+
+var container = document.body.appendChild(document.createElement('div'));
+container.className = "container";
+
+for (var i = 0; i <= 50 ; i++) {
+  var dots = document.createElement('div');
+  dots.className = "dots";
+  dots.innerHTML = "";
+
+  var offsetY = anime.random(50,300) + 'px';
+  var offsetX = anime.random(100,700) + 'px';
+  dots.style.top = offsetY;
+  dots.style.left = offsetX;
+  container.appendChild(dots);
+}
+
+
+
+</script>
+
+</body>
+</html>

@@ -18,7 +18,7 @@
     margin-bottom: 2%;
   }
 
-  #chart_1, #chart_2, #chart_3,#chart_7 {
+  #chart_1, #chart_2, #chart_3,#chart_4,#chart_5,#chart_6,#chart_7 {
     text-align: center;
   }
 
@@ -42,6 +42,12 @@
   }
 
   #chart_5 iframe{
+    height: 250px;
+    width: 800px;
+    border: 0 none;
+  }
+
+  #chart_6 iframe{
     height: 250px;
     width: 800px;
     border: 0 none;

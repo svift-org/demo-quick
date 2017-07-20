@@ -28,6 +28,9 @@
       display: inline-block;
       text-align: center;
       /*background: linear-gradient(to top, #F8B600 , #FFBE00);*/
+       border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      /*font-weight: bold;*/
     }
 
     .helper{
@@ -62,7 +65,7 @@
 
 <body>
 
-  <div id="header">???</div>
+  <div id="header">Anzahl der .. </div>
   <div id="bars_wrapper">
     <div class="helper" style="height:100%"></div>
     <div class="bar" style="height:0%"><span>20</span></div>
@@ -138,6 +141,9 @@
       autoplay: false,
       duration: 200,
       opacity: 1,
+      delay: function(el, i) { 
+        return i * 40; //delay to start next bars_wrapper animation
+      },
       backgroundColor: "#FFBE00",
       complete: function(anim) {
           setTimeout(function(){

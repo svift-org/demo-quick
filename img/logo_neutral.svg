@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="853px" height="181px" viewBox="0 0 853 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5" transform="translate(8.000000, 10.000000)">
+            <text id="News-Online" font-family="AktivGrotesk-Black" font-size="100" font-weight="700" fill="#000000">
+                <tspan x="228" y="109">News Online</tspan>
+            </text>
+            <g id="Group-3" stroke="#FFBE00" stroke-width="20" stroke-linecap="round">
+                <circle id="Oval" stroke-dasharray="360,100000000" cx="80.5" cy="80.5" r="80.5"></circle>
+                <circle id="Oval" stroke-dasharray="153,100000000" cx="81" cy="81" r="47"></circle>
+                <circle id="Oval" stroke-dasharray="360,100000000" cx="81" cy="81" r="19"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

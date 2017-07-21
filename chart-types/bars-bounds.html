@@ -28,9 +28,10 @@
       display: inline-block;
       text-align: center;
       /*background: linear-gradient(to top, #F8B600 , #FFBE00);*/
-       border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
+/*       border-top-left-radius: 4px;
+      border-top-right-radius: 4px;*/
       /*font-weight: bold;*/
+      padding-top: 5px;
     }
 
     .helper{
@@ -49,12 +50,14 @@
     }
 
     .bar span {
-        display: flex;
+        display: table;
         padding-left: 8px;
         position: relative;
         text-align: center;
         color: white;
         opacity: 0;
+        background-color: rgba(220,160,140,0.0);
+
     }
 
 
@@ -65,7 +68,7 @@
 
 <body>
 
-  <div id="header">Anzahl der .. </div>
+  <div id="header">Anzahl der Delikte über 6 Jahre</div>
   <div id="bars_wrapper">
     <div class="helper" style="height:100%"></div>
     <div class="bar" style="height:0%"><span>20</span></div>
